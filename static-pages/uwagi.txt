@@ -1,0 +1,6 @@
+4. Pole wyszukiwania powinno byc zdecydowanie szersze (wyszukiwanie proste)
+5. Caly help moglby byc "chowalny", tzn. zwijac sie w bok (to sie zrobi
+  pozniej). Tak jak np. tutaj http://travis-ci.org/ (sponsorzy)
+6. "Szukaj" powinno byc na srodku (tzn. wycentrowane wzgledem kryteriow)
+7. "Znajdz wszedzie" == "Dopasowanie uniwersalne"
+8. Więcej informacji -> ukryć dodatkowy opis z wykorzystaniem klasy hide
