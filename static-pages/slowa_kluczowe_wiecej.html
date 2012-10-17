@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wyszukiwanie zaawansowane &mdash; Synat, system pomocy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/synat-help_style.css">
+</head>
+<body>
+  <nav role="navigation">
+    <a href="index.html">Synat &mdash; katalog zbiorów &mdash; strona główna</a>    
+    <form action="/search/" role="search" method="get" id="szybkieszukanie">
+      <label for="szukaj">Szybkie wyszukiwanie:</label>
+      <input type="text" name="q" id="szukaj" value="" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę">
+      <select title="Wybierz zakres">
+        <option>Szukaj wszędzie</option>
+        <option>Szukaj w innych miejscach</option>
+      </select>    
+      <input type="submit" id="search-button" value="Szukaj">
+    </form>
+  </nav>
+  <div role="main" id="container" class="clearfix">
+    <ul id="tab-nav">
+      <li id="lt"><a href="proste.html" class="inact">Wyszukiwanie proste</a></li>
+      <li id="rt"><a href="zaaw.html" class="curr"><h1>Wyszukiwanie zaawansowane</h1></a></li>
+    </ul>
+  
+    <div id="main">
+    <!-- Rozszerzony tekst pomocy -->      
+      <article id="moreinfo">
+        <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+        <h1>Dowolne dopasowanie</h1>
+        <div>
+          <h2>Opis</h2>
+          <p>
+            Wyszukiwanie z użyciem dowolnego dopasowania pozwala na odnalezienie
+            zasobów, które zawierają wprowadzone słowa w dowolym elemenci opisu
+            zasobu. Słowa te mogą występować w jego tytule, streszczeniu a także jego treści.
+          </p>
+          <p>
+            Wprowadzane słowa nie muszą być kompletne - język
+            zapytań pozwala na użycie znaków zastępczych - * i ?, które
+            zastępują odpowiednio: dowolny ciąg znaków oraz pojedynczy znak.
+            Jeśli zapytanie ujęte jest cudzysłowy wynik musi zawierać dokładne
+            dopasowanie wyrażenia w cudzysłowie.
+          </p>
+          <p>
+            Wielkość liter nie jest uwzględniana w wyszukiwaniu.
+          </p>
+          <h2>Uwaga</h2>
+          <p>
+            Ze względu na rozmiar zasobów Synatu wyszukiwanie z użyciem
+            dowolnego dopasowania może być niedokładne. Wyniki sortowane są względem
+            ich dopasowania do wprowadzonych słów kluczowych.
+          </p>
+          <h2>Przykłady wyszukiwania</h2>
+          <table>
+            <tr>
+              <th>Szukana fraza</th>
+              <th>Wynik</th>
+            </tr>
+            <tr>
+              <td>historia polsk*</td>
+              <td>historia Polski, Polska, Rzeczpospolita Polska, historia,
+                historia polskiej państwowości
+              </td>
+            </tr>
+            <tr>
+              <td>"historia polsk*"</td>
+              <td>historia Polski, historia polskiej państwowości</td>
+            </tr>
+            <tr>
+              <td>b?g</td>
+              <td>Bóg, bóg, Bug, big</td>
+            </tr>
+          </table>
+          <h2>Przydatne wskazówki</h2>
+          <ul>
+            <li>Słowa mogą być wprowadzane w <strong>dowolnej kolejności</strong>.</li>
+            <li>Wyszukiwanie obejmuje <strong>wszystkie słowa</strong>, włączając w to spójniki, 
+              rodzajniki, itp.</li>
+            <li>Użycie <strong>cudzysłowów</strong> pozwala na zastosowanie <strong>dokładnego</strong> dopasowania
+              (np. <em>"historyczne miejsca"</em>). W typ wypadku kolejność słów <em>ma znaczenie</em></li>
+            <li>Użycie <strong>*</strong> pozwala na zastąpienie dowolnego ciągu znaków, zarówno
+              wewnątrz jak i na końcu słowa kluczowego. 
+              Ta opcja może być używana w połączeniu z cudzysłowami.</li>
+            <li>Użycie <strong>?</strong> pozwala na zastąpienie pojedynczego znaku.</li>
+            <li>Wyniki wyszukiwania są sortowane z użyciem algorymtu dopasowania słów kluczowych.
+              Zasoby, które lepiej pasują do zapytania pojawiają się wcześniej.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <!-- Nawigacja w obrębie pomocy -->    
+    <aside>      
+      <section class="main-sec collapseit">
+        <h2 class="collapse">O wyszukiwaniu</h2>
+        <div>
+          <p>
+            Aby efektywnie korzystać z mechanizmu wyszukiwania w Synacie, 
+            warto zapoznać z różnicami występującymi pomiędzy podstawowymi
+            mechanizmami wyszukiwania (szybkim/prostym/zaawansowanym)
+            oraz poznać podstawowe kryteria wyszukiwania.
+          </p>
+          <p>
+            Więcej informacji na temat:
+            <ul>
+              <li><a href="wyszukiwanie_proste_wiecej.html">wyszukiwania prostego</a></li>
+              <li><a href="wyszukiwanie_zaaw_wiecej.html">wyszukiwania zaawansowanego</a></li>
+              <li><a href="wyszukiwanie_szybkie_wiecej.html">wyszukiwania szybkiego</a></li>
+            </ul>
+          </p>
+          <p>
+            Skrócony opis kryteriów wyszukiwania dostępny jest po kliknięciu na 
+            pozycję <em>Kryteria wyszukiwania</em> natomiast szczegółowy opis, po kliknięciu
+            na link <em>Więcej informacji</em>.
+          </p>
+        </div>
+      </section>
+      
+      <section class="main-sec collapseit">
+        <h2 class="collapse">Kryteria wyszukiwania</h2>
+        <div>
+          <h3>Dowolne dopasowanie</h3>
+          <p>
+            Wyszukiwanie z użyciem <strong>dowolnego dopasowania</strong> dopasowuje
+            wprowadzone słowa do wszystkich informacji dostępnych na temat zasobu
+            (tutułu, podtytułu, autora, tematu, itp.). Kolejność wprowadzonych słów
+            nie ma znaczenia.
+          </p>
+          <p><a href="slowa_kluczowe_wiecej.html" class="wiecej-info">Więcej informacji na temat dowolnego dopasowania</a></p>
+          <h3>Tytuł</h3>                    
+          <p>
+            Wyszukiwanie po <strong>tytule</strong> dopasowuje poszukiwane
+            słowa w tytule lub podtytule zasobu.
+          </p>
+          <p><a href="tytul_wiecej.html" class="wiecej-info">Więcej informacji na temat tytułu</a></p>
+          <h3>Autor / Twórca</h3>                    
+          <p>
+            Wyszukiwanie po <strong>autorze/twórcy</strong> dopasowuje poszukiwane
+            słowa w nazwisku autora, instytucji odpowiedzialnej za stworzenie zasobu
+            lub wydarzeniu, w trakcie którego on powstał. 
+          </p>
+          <p><a href="autor_wiecej.html" class="wiecej-info">Więcej informacji na temat autora</a></p>
+          <h3>Temat</h3>                    
+          <p>
+            Wyszukiwanie po <strong>temacie</strong> dopasowuje poszukiwane
+            słowa do kontrolowanej listy tematów wykorzystywanych do opisu
+            zasobów. 
+          </p>
+          <p><a href="temat_wiecej.html" class="wiecej-info">Więcej informacji dotyczących tematu zasobu</a></p>
+          <h3>Tytuł / Autor</h3>                    
+          <p>
+            Wyszukiwanie po <strong>tytule i autorze</strong> dopasowuje poszukiwane
+            słowa jednocześnie do tytułu i autora lub twórcy zasobu. 
+          </p>
+          <p><a href="nazwa_wiecej.html" class="wiecej-info">Więcej informacji na temat tytułu i autora</a></p>
+          <h3>Tytuł / Seria</h3>                    
+          <p>
+            Wyszukiwanie po <strong>tytule i serii wydawniczej</strong> dopasowuje poszukiwane
+            słowa jednocześnie do tytułu, podtytułu i nazwy serii wydawniczej zasobu.
+          </p>
+          <p><a href="seria_wiecej.html" class="wiecej-info">Więcej informacji tytułu i serii wydawniczej</a></p>
+        </div>
+      </section>                    
+      <section class="main-sec collapseit">
+        <h2 class="collapse">Przeglądanie zasobów</h2>
+        <div>
+          <h3>Przeglądanie tytułów</h3>
+          <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+          <p><a href="wiecej.html">Dowiedz się więcej</a></p>
+          <h3>Przeglądanie numerów ISBN/ISSN</h3>
+          <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+          <p><a href="wiecej.html">Dowiedz się więcej</a></p>
+        </div>
+      </section>                    
+    </aside>
+  </div>
+  <footer>
+
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script>
+            $(".collapseit, .collapseit2").collapse({show: function(){
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                },
+                hide : function() {
+                    
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                }
+            });
+        </script>  
+</body>
+</html>

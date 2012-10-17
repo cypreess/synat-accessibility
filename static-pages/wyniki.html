@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wyszukiwanie proste &mdash; Synat, system pomocy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/synat-help_style.css">
+  <script>document.documentElement.className = "js";</script>
+
+</head>
+<body>
+
+  <nav role="navigation">
+    <h1><a href="index.html">Synat &mdash; katalog zbiorów &mdash; strona główna</a></h1>    
+    <form action="/search/" role="search" method="get" id="szybkieszukanie">
+      <label for="szukaj">Szybkie wyszukiwanie:</label>
+      <input type="text" name="q" id="szukaj" value="" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę">
+      <select title="Wybierz zakres">
+        <option>Szukaj wszędzie</option>
+        <option>Szukaj gdzieś tam</option>
+      </select>    
+      <input type="submit" id="search-button" value="Szukaj">
+    </form>    
+  </nav>
+  
+  <div role="main" id="container" class="cont-main clearfix">  
+    
+    <article>
+      <h1> Twoje wyszukiwanie</h1>    
+      <p> 
+        Wyszukiwanie proste <a href="proste.html">zmień <span class="hide">wyszukiwanie proste</span></a> | Kryterium: Autor/Twórca 
+        <a href="proste.html">zmień <span class="hide">zmień kryterium autor Twórca</span></a>
+      </p>
+      <hr class="dotted">
+      <h2>Wyniki wyszukiwania</h2>
+      <p>Znaleziono 256 pozycji</p>
+      
+      <table>
+        <tr>
+          <th>Lp.</th><th>Liczba pozycji</th><th>Wyniki</th><th>Rodzaj wyniku</th><th></th>
+        </tr>
+        <tr>
+          <td>1</td><td>12</td><td>Adam Mickiewicz</td><td>Dane osobowe</td><td><a href="#">więcej &raquo; <span class="hide"> o "Adam Mickiewicz"</span></a></td>
+        </tr>
+        <tr>
+          <td>2</td><td>23</td><td>Danuta Mickiewicz</td><td>Dane osobowe</td><td><a href="#">więcej &raquo; <span class="hide"> o "Adam Mickiewicz"</span></a></td>
+        </tr>
+        <tr>
+          <td>3</td><td>1</td><td>Rok Mickiewiczowski</td><td>Wydarzenie</td><td><a href="#">więcej &raquo; <span class="hide"> o "Adam Mickiewicz"</span></a></td>
+        </tr>
+        <tr>
+          <td>4</td><td>1</td><td>Uniwersytet Adama Mickiewicza</td><td>Instytucja</td><td><a href="#">więcej &raquo; <span class="hide"> o "Adam Mickiewicz"</span></a></td>
+        </tr>
+     </article>
+  
+
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script>
+            $(".collapseit, .collapseit2").collapse({show: function(){
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                },
+                hide : function() {
+                    
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                }
+            });
+        </script>  
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wyszukiwanie zaawansowane &mdash; Synat, system pomocy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/synat-help_style.css">
+</head>
+<body>
+  <nav role="navigation">
+    <a href="index.html">Synat &mdash; katalog zbiorów &mdash; strona główna</a>    
+    <form action="/search/" role="search" method="get" id="szybkieszukanie">
+      <label for="szukaj">Szybkie wyszukiwanie:</label>
+      <input type="text" name="q" id="szukaj" value="" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę">
+      <select title="Wybierz zakres">
+        <option>Szukaj wszędzie</option>
+        <option>Szukaj w innych miejscach</option>
+      </select>    
+      <input type="submit" id="search-button" value="Szukaj">
+    </form>
+  </nav>
+  <div role="main" id="container" class="clearfix">
+    <ul id="tab-nav">
+      <li id="lt"><a href="proste.html" class="inact">Wyszukiwanie proste</a></li>
+      <li id="rt"><a href="zaaw.html" class="curr"><h1>Wyszukiwanie zaawansowane</h1></a></li>
+    </ul>
+  
+    <div id="main">
+    <!-- Rozszerzony tekst pomocy -->      
+      <article id="moreinfo">
+        <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+        <h1>Kryteria wyszukiwania: znajdź wszędzie</h1>
+        <p>Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny. 
+           Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny.</p>
+        <h2>Przykłady użycia</h2>
+        <p>Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny. 
+           Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny.</p>
+        <table>
+          <tr>
+            <th>Rodzaj zapytania</th>
+            <th>Treść</th>
+            <th>Wynik</th>
+          </tr>
+          <tr>
+            <td>Dane osobowe</td>
+            <td class="wazne">Adam Mickiewicz</td>
+            <td class="inf">zwraca wszystkie wyniki, zawierające oba słowa występujące we nagłówku nazwy</td>
+          </tr>
+        </table>
+        <h2>Wskazówki</h2>
+        <p>Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny. 
+           Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny.</p> 
+        <h3>Nagłówek poziomu trzeciego</h3>
+        <ul>
+          <li>Wpisz słowa w dowolnej kolejności</li>
+          <li>Aby odszukać dokładną frazę użyj cudzysłowu (np. "Jan Kochanowski")</li>
+        </ul>
+
+        <p>Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny. 
+           Kryterium wyszukiwania w przypadku wyszukiwania może być użyte w taki sposób, a nie inny.</p> 
+      </article>
+      </div>
+
+
+    <!-- Nawigacja w obrębie pomocy -->    
+    <aside>      
+      <section class="main-sec collapseit">
+        <h2 class="collapse">O wyszukiwaniu</h2>
+        <div>
+          <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+          <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+          <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+        </div>
+      </section>
+      
+      <section class="main-sec collapseit">
+        <h2 class="collapse">Przykłady użycia</h2>
+          <div>
+            <h3>Znajdź wszędzie</h3>
+            <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+            <p><a href="wiecej.html" class="wiecej-info">Dowiedz się więcej</a></p>
+            <h3>Autor / Twórca / Temat / Tytuł / Seria</h3>                    
+            <p>Wyszukiwanie po nagłówkach:</p>
+            <ul>
+              <li>Wpisz imię i nazwisko autora lub twórcy, tytuł, temat lub numer katalogowy publikacji</li> 
+              <li>Aby zawęzić wyniki wyszukiwania wpisz jak najwięcej słów</li>
+            </ul>
+            <h3>Przeglądanie tytułów</h3>
+            <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+            <p><a href="wiecej.html">Dowiedz się więcej</a></p>
+            <h3>Przeglądanie numerów ISBN/ISSN</h3>
+            <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
+            <p><a href="wiecej.html">Dowiedz się więcej</a></p>
+          </div>
+        </section>                    
+    </aside>
+  
+
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script>
+            $(".collapseit, .collapseit2").collapse({show: function(){
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                },
+                hide : function() {
+                    
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                }
+            });
+        </script>  
+</body>
+</html>
