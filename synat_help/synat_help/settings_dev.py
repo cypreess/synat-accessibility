@@ -1,4 +1,4 @@
-from settings import *
+from synat_help.settings import *
 
 DATABASES = {
     'default': {

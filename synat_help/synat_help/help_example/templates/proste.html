@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}
+Wyszukiwanie proste &mdash; Synat, system pomocy
+{% endblock title %}
+
+{% block main_container %}
+  
+    <div id="main">
+      <form action="#">
+      	<fieldset>
+          <legend class="hide">Wyszukiwanie proste:</legend>
+          <div>
+            <label for="haslo" class="format">Szukana fraza:</label>
+            <input id="haslo" type="text">
+          </div>
+          <div>
+          <label for="kryterium" class="format">Kryterium:</label>
+          <select id="kryterium" name="kryterium">
+            <option>Dowolne dopasowanie</option>
+            <option>Tytuł</option>
+            <option>Autor / Twórca</option>
+            <option>Temat</option>
+            <option>Tytuł / Autor</option>
+            <option>Tytuł / Seria</option>
+            <optgroup label="Przeglądanie zasobów">
+              <option>Przeglądanie tytułów</option>
+              <option>Przeglądanie autorów / twórców</option>
+              <option>Przeglądanie numerów katalogowych</option>
+              <option>Przeglądanie numerów ISBN/ISSN</option>
+            </optgroup>
+          </select>
+          </div>          	
+      	</fieldset>
+        <fieldset class="collapseit2">
+          <legend class="type-heading collapse">Ograniczenia wyszukiwania</legend>
+          <div> <!-- Blok zwijalny -->
+            <fieldset>
+              <legend>Data:</legend>
+              <input type="text" title="Od dnia" class="short-input">            
+              <input id="rowne" name="rowne" type="radio">
+              <label for="rowne">=</label>
+              <input id="mniejsze" name="mniejsze" type="radio">
+              <label for="mniejsze">&lt;</label>
+              <input id="wieksze" name="wieksze" type="radio">
+              <label for="wieksze">&gt;</label>
+              <input type="text" title="Do dnia" class="short-input">
+            </fieldset>
+            
+            <div>
+            <label for="jezyk" class="format">Język:</label>
+            <select id="jezyk" name="jezyk">
+              <option>polski</option>
+              <option>angielski</option>
+              <option>francuski</option>
+              <option>niemiecki</option>
+              <option>czeski</option>
+            </select>
+            </div>   
+            
+            <div>
+            <label for="typ" class="format">Typ:</label>
+            <select id="typ" name="typ">
+              <option>Książka</option>
+              <option>Artykuł</option>
+              <option>Fotografia</option>
+            </select>
+            </div>
+            
+            <div>
+            <label for="ksiegozbior" class="format">Księgozbiór:</label>
+            <select id="ksiegozbior" name="ksiegozbior">
+              <option>Biblioteka Narodowa w Warszawie</option>
+              <option>Biblioteka Uniwersytetu Jagiellońskiego</option>
+            </select>
+            </div>
+            
+            <div>
+            <label for="miejsce" class="format">Miejsce publikacji:</label>
+            <select id="miejsce" name="miejsce">
+              <option>Polska</option>
+              <option>Francja</option>
+              <option>Niemcy</option>
+              <option>Czechy</option>
+              <option>Słowacja</option>
+            </select>
+            </div>
+          </div>        
+        </fieldset>
+        <div class="buttons">
+          <button type="button" class="bt">Szukaj <div class="bt-arr">&nbsp;</div></button>
+        </div>
+      </form>
+    </div>
+    
+
+    {% include "aside.html" %}
+
+ {% endblock %}

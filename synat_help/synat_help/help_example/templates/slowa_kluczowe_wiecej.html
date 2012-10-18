@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Wyszukiwanie zaawansowane &mdash; Synat, system pomocy{% endblock %}
+{% block main_container %}
+    <div id="main">
+        <!-- Rozszerzony tekst pomocy -->
+        <article id="moreinfo">
+            <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+            <h1>Dowolne dopasowanie</h1>
+            <div>
+                <h2>Opis</h2>
+                <p>
+                    Wyszukiwanie z użyciem dowolnego dopasowania pozwala na odnalezienie
+                    zasobów, które zawierają wprowadzone słowa w dowolym elemenci opisu
+                    zasobu. Słowa te mogą występować w jego tytule, streszczeniu a także jego treści.
+                </p>
+                <p>
+                    Wprowadzane słowa nie muszą być kompletne - język
+                    zapytań pozwala na użycie znaków zastępczych - * i ?, które
+                    zastępują odpowiednio: dowolny ciąg znaków oraz pojedynczy znak.
+                    Jeśli zapytanie ujęte jest cudzysłowy wynik musi zawierać dokładne
+                    dopasowanie wyrażenia w cudzysłowie.
+                </p>
+                <p>
+                    Wielkość liter nie jest uwzględniana w wyszukiwaniu.
+                </p>
+                <h2>Uwaga</h2>
+                <p>
+                    Ze względu na rozmiar zasobów Synatu wyszukiwanie z użyciem
+                    dowolnego dopasowania może być niedokładne. Wyniki sortowane są względem
+                    ich dopasowania do wprowadzonych słów kluczowych.
+                </p>
+                <h2>Przykłady wyszukiwania</h2>
+                <table>
+                    <tr>
+                        <th>Szukana fraza</th>
+                        <th>Wynik</th>
+                    </tr>
+                    <tr>
+                        <td>historia polsk*</td>
+                        <td>historia Polski, Polska, Rzeczpospolita Polska, historia,
+                            historia polskiej państwowości
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>"historia polsk*"</td>
+                        <td>historia Polski, historia polskiej państwowości</td>
+                    </tr>
+                    <tr>
+                        <td>b?g</td>
+                        <td>Bóg, bóg, Bug, big</td>
+                    </tr>
+                </table>
+                <h2>Przydatne wskazówki</h2>
+                <ul>
+                    <li>Słowa mogą być wprowadzane w <strong>dowolnej kolejności</strong>.</li>
+                    <li>Wyszukiwanie obejmuje <strong>wszystkie słowa</strong>, włączając w to spójniki,
+                        rodzajniki, itp.</li>
+                    <li>Użycie <strong>cudzysłowów</strong> pozwala na zastosowanie <strong>dokładnego</strong> dopasowania
+                        (np. <em>"historyczne miejsca"</em>). W typ wypadku kolejność słów <em>ma znaczenie</em></li>
+                    <li>Użycie <strong>*</strong> pozwala na zastąpienie dowolnego ciągu znaków, zarówno
+                        wewnątrz jak i na końcu słowa kluczowego.
+                        Ta opcja może być używana w połączeniu z cudzysłowami.</li>
+                    <li>Użycie <strong>?</strong> pozwala na zastąpienie pojedynczego znaku.</li>
+                    <li>Wyniki wyszukiwania są sortowane z użyciem algorymtu dopasowania słów kluczowych.
+                        Zasoby, które lepiej pasują do zapytania pojawiają się wcześniej.</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    {% include "aside.html" %}
+
+
+{% endblock %}
+
+

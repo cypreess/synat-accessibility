@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Wyszukiwanie proste &mdash; Synat, system pomocy{% endblock %}
+{% block main_container %}
+    <div id="main">
+    <!-- Rozszerzony tekst pomocy -->      
+      <article id="moreinfo">
+        <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+        <h1>Wyszukiwanie proste</h1>
+        <p>
+          Procedura wyszukiwania jest następująca:
+          <ol>
+            <!-- 
+            "Wpisz szukaną fraze" - czy nie powinno być "Szukana fraza"?
+            "Wybierz kryterium" - "Kryterium wyszukiwania"?
+
+            Tzn. opis pól formularza to zazwyczaj są rzeczowniki, natomiast
+            placeholder może być w formie zdania. Rozumiem, że czytnikowi można
+            zapodać inny tekst niż wyświetlany?
+
+            Inna kwestia - zastanawiam się, czy nie lepije byłoby jednak użyć określenia
+            "słowa kluczowe"?
+            -->
+            <li>w polu <strong>szukana fraza</strong> wprowadź jedno lub więcej słów kluczowych</li>
+            <li>wybierz <strong>kryterium wyszukiwania</strong> zgodne z oczekiwanym sposobem działania</li>
+            <li>określ <strong>liczbę rezultatów</strong> pojawiającą się na jednej stronie wyników 
+              (domyślnie 20)</li>
+            <li>kliknij przycisk <strong>szukaj</strong>
+          </ol>
+        </p>
+        <p>
+          W zależności od wybranego sposoby wyszukiwania wyniki pojawią się w postaci
+          <a href="#">listy nagłówków</a>, <a href="#">listy tytułów</a> bądź 
+          <a href="#">listy dopasowanych słów kluczowych</a>.
+        </p>
+      </article>
+    </div>
+    
+    {% include "aside.html" %}
+
+
+ {% endblock %}

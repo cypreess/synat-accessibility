@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block title %}Wyszukiwanie zaawansowane &mdash; Synat, system pomocy{% endblock %}
+{% block main_container %}
+
+  
+    <div id="main">
+      <form action="#" class="">
+      	<fieldset>
+      		<legend class="type-heading">Szukaj:</legend>
+          <div>
+            <input id="haslo" type="text" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę" class="s110px">
+            <select id="wyrazenie" name="wyrazenie" title="Wybierz zakres (?)" class="s110px">
+              <option>Całe wyrażenie</option>
+              <option>Inna opcja</option>
+            </select>
+            <select id="gdzie" name="gdzie" title="Wybierz co (?? ustawić etykietę)" class="s110px">
+              <option>Dowolne dopasowanie</option>
+              <option>Tytuł</option>
+              <option>Autor / Twórca</option>
+              <option>Temat</option>
+              <option>Tytuł / Autor</option>
+              <option>Tytuł / Seria</option>
+            </select>
+          </div>
+          <hr>          	
+      	</fieldset>
+        
+        <!-- KRYTERIUM -->
+        <fieldset>
+          <legend class="hide">Kolejne kryterium (może dodać nr 2)</legend>
+          
+          <fieldset>
+            <legend class="hide">Wybierz operator (? jakiś lepszy opis?)</legend>
+            <input id="i" name="i" type="radio">
+            <label for="i">i</label>
+            <input id="lub" name="lub" type="radio">
+            <label for="lub">lub</label>
+            <input id="bez" name="bez" type="radio">
+            <label for="bez">bez</label>            
+          </fieldset>
+          <div>
+            <input id="haslo" type="text" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę" class="s110px">
+            <select id="wyrazenie" name="wyrazenie" title="Wybierz zakres (?)" class="s110px">
+              <option>Całe wyrażenie</option>
+              <option>Inna opcja</option>
+            </select>
+            <select id="gdzie" name="gdzie" title="Wybierz co (?? ustawić etykietę)" class="s110px">
+              <option>Dowolne dopasowanie</option>
+              <option>Tytuł</option>
+              <option>Autor / Twórca</option>
+              <option>Temat</option>
+              <option>Tytuł / Autor</option>
+              <option>Tytuł / Seria</option>
+            </select>
+          </div>
+          <hr>      
+        </fieldset>
+        
+        <!-- KRYTERIUM -->
+        <fieldset>
+          <legend class="hide">Kolejne kryterium (może dodać nr 2)</legend>
+          
+          <fieldset>
+            <legend class="hide">Wybierz operator (? jakiś lepszy opis?)</legend>
+            <input id="i2" name="i2" type="radio">
+            <label for="i2">i</label>
+            <input id="lub2" name="lub2" type="radio">
+            <label for="lub2">lub</label>
+            <input id="bez2" name="bez2" type="radio">
+            <label for="bez2">bez</label>            
+          </fieldset>
+          <div>
+            <input id="haslo" type="text" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę" class="s110px">
+      			<select id="wyrazenie2" name="wyrazenie2" title="Wybierz zakres (?)" class="s110px">
+              <option>Całe wyrażenie</option>
+              <option>Inna opcja</option>
+            </select>
+            <select id="gdzie2" name="gdzie2" title="Wybierz co (?? ustawić etykietę)" class="s110px">
+              <option>Dowolne dopasowanie</option>
+              <option>Tytuł</option>
+              <option>Autor / Twórca</option>
+              <option>Temat</option>
+              <option>Tytuł / Autor</option>
+              <option>Tytuł / Seria</option>
+            </select>
+          </div>
+          <hr>      
+        </fieldset>
+
+        
+        <!-- Rozwijany blok z wyszukiwaniem -->
+        <fieldset class="collapseit2">
+          <legend class="type-heading collapse">Ograniczenia wyszukiwania</legend>
+          <div> <!-- Blok zwijalny -->
+            <fieldset>
+              <legend>Data:</legend>
+              <input type="text" title="Od dnia" class="short-input">            
+              <input id="rowne" name="rowne" type="radio">
+              <label for="rowne">=</label>
+              <input id="mniejsze" name="mniejsze" type="radio">
+              <label for="mniejsze">&lt;</label>
+              <input id="wieksze" name="wieksze" type="radio">
+              <label for="wieksze">&gt;</label>
+              <input type="text" title="Do dnia" class="short-input">
+            </fieldset>
+            
+            <div>
+            <label for="jezyk" class="format">Język:</label>
+            <select id="jezyk" name="jezyk">
+              <option>polski</option>
+              <option>angielski</option>
+              <option>francuski</option>
+              <option>niemiecki</option>
+              <option>czeski</option>
+            </select>
+            </div>   
+            
+            <div>
+            <label for="typ" class="format">Typ:</label>
+            <select id="typ" name="typ">
+              <option>Książka</option>
+              <option>Artykuł</option>
+              <option>Fotografia</option>
+            </select>
+            </div>
+            
+            <div>
+            <label for="ksiegozbior" class="format">Księgozbiór:</label>
+            <select id="ksiegozbior" name="ksiegozbior">
+              <option>Biblioteka Narodowa w Warszawie</option>
+              <option>Biblioteka Uniwersytetu Jagiellońskiego</option>
+            </select>
+            </div>
+            
+            <div>
+            <label for="miejsce" class="format">Miejsce publikacji:</label>
+            <select id="miejsce" name="miejsce">
+              <option>Polska</option>
+              <option>Francja</option>
+              <option>Niemcy</option>
+              <option>Czechy</option>
+              <option>Słowacja</option>
+            </select>
+            </div>
+          </div>        
+        </fieldset>
+        <div class="buttons">
+          <button type="button" class="bt">Szukaj <div class="bt-arr">&nbsp;</div></button>
+        </div>
+      </form>
+    </div>
+
+    {% include "aside.html" %}
+
+  
+
+{% endblock %}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wyszukiwanie proste &mdash; Synat, system pomocy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/synat-help_style.css">
+  <script>document.documentElement.className = "js";</script>
+</head>
+<body>
+
+  <nav role="navigation">
+    <h1><a href="{% url home %}">Synat &mdash; katalog zbiorów &mdash; strona główna</a></h1>
+    <form action="/search/" role="search" method="get" id="szybkieszukanie">
+      <label for="szukaj">Szybkie wyszukiwanie:</label>
+      <input type="text" name="q" id="szukaj" value="" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę">
+      <select title="Wybierz zakres">
+        <option>Szukaj wszędzie</option>
+        <option>Szukaj gdzieś tam</option>
+      </select>    
+      <input type="submit" id="search-button" value="Szukaj">
+    </form>    
+  </nav>
+  
+  <div role="main" id="container" class="cont-main clearfix">  
+    <section>
+      <h2>Wyszukiwanie proste</h2>
+      <p>Prosty formularz z opcjami wyboru kryterium:</p>      
+      <ul>
+        <li>Tytułu</li>
+        <li>Autora i Twórcy</li>
+        <li>Tematu</li>
+        <li>Serii wydawniczej</li>
+      </ul>
+      <a href="{% url proste %}" class="bt">Rozpocznij wyszukiwanie <span class="hide">proste</span><div class="arr"></div></a>
+    </section>
+    
+    <section>      
+      <h2>Wyszukiwanie zaawansowane</h2>
+      <p>Wyszukiwanie przy pomocy kombinacji 
+      formularzy:</p>
+      <ul>
+        <li>Konstruowanie wyrażeń</li>
+        <li>Filtrowanie wyników przy pomocy indeksów</li> 
+        <li>Stosowanie zmiennych logicznych</li>
+      </ul>
+      <a href="{% url zaawansowane %}" class="bt">Rozpocznij wyszukiwanie <span class="hide">zaawansowane</span><div class="arr"></div></a>
+    </section>
+  
+
+
+
+  </div>
+  <footer>
+   <div class="ALERT"><a href="wyniki.html">ekran wyników</a></div>
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script>
+            $(".collapseit, .collapseit2").collapse({show: function(){
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                },
+                hide : function() {
+                    
+                    this.animate({
+                        opacity: 'toggle', 
+                        height: 'toggle'
+                    }, 300);
+                }
+            });
+        </script>  
+</body>
+</html>

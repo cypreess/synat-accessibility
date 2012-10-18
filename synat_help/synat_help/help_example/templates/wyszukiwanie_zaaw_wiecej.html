@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Wyszukiwanie zaawansowane &mdash; Synat, system pomocy{% endblock %}
+{% block main_container %}
+
+
+    <div id="main">
+        <!-- Rozszerzony tekst pomocy -->
+        <article id="moreinfo">
+            <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+            <h1>Wyszukiwanie zaawansowane</h1>
+            <p>
+                Wyszukiwanie zaawansowane jest szczególnie przydatne w sytuacji, w której
+                poszukiwany jest konkretny zasób, ale jego dokładny tytuł ani dane
+                autora nie są znane oraz w przypadku, w którym poszukiwane są zasoby spełniające
+                ściśle określone kryteria.
+            </p>
+            <h2>Sposób użycia</h2>
+            <p>
+                Wyszukiwanie zaawansowane polega na określeniu jednego lub większej liczby kryteriów,
+                które dodatkowo mogą być połączone spójnikami loginczymi - alternatywną, koniunkcją
+                oraz negacją. Ponadto można określić sposób dopasowania słowa kluczowego -
+                można wymagać aby zostało one dopasowane w całości lub części. Trzecim istotnym
+                czynnikiem przydatnym w wyszukiwaniu zaawansowanym jest możliwość określienia
+                miejsc dopasowania słów kluczowych - dostępne są wszyskie kryteria występujące
+                osobno w wyszukiwaniu prostym.
+            </p>
+            <p>
+                Procedura wyszukiwania jest następująca:
+            <ol>
+                <li>określ <strong>ograniczenia</strong> wyszukiwania</li>
+                <li>wprowadź <strong>słowa kluczowe</strong> w polu wyszukiwania dla pierwszego kryterium</li>
+                <li>wybierz jedną spośród opcji <strong>dopasowania</strong></li>
+                <li>wybierz <strong>kryterium</strong> wyszukiwania</li>
+                <li>wybierz <strong>operator logiczy</strong> i powróć do punktu 2 (można pominąć)</li>
+                <li>kliknij przycisk <strong>szukaj</strong></li>
+            </ol>
+            </p>
+        </article>
+    </div>
+
+    {% include "aside.html" %}
+
+
+{% endblock %}
