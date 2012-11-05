@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+    Wyszukiwanie proste &mdash; Synat, system pomocy
+{% endblock title %}
+
+{% block main_container %}
+
+    <div id="main">
+        <article id="moreinfo">
+            <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+
+          <h1>Wyszukiwanie po tytule oraz autorze</h1>
+
+          <div>
+              <h2>Opis</h2>
+              <p>
+                Wyszukiwanie po tytule oraz autorze jest szczególnie przydatne w sytuacji,
+                w której dany zasób posiada wiele wydań oraz do odnajdywania dzieł
+                muzycznych. Słowa wprowadzone w tym kryterium
+                są zawężone do tytułu oraz autora (instytucji, zdarzenia), który był odpowiedzialny
+                za powstanie zasobu.
+              </p>
+              <h2>Przykłady wyszukiwania</h2>
+              <table>
+                  <tr>
+                      <th>Aby znaleźć...</th>
+                      <th>można wprowadzić</th>
+                  </tr>
+                  <tr>
+                      <td>Dickens, Charles, 1812-1870. Przygody Olivera Twista.</td>
+                      <td>
+                        dickens oliver twist
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Mozart, Wolfgang Amadeusz, 1756-1791. Zaczarowany flet.</td>
+                      <td>
+                        mozart zaczarowany flet
+                      </td>
+                  </tr>
+              </table>
+              {% include "wskazowki.html" %}
+          </div>
+      </article>
+    </div>
+    {% include "aside.html" %}
+{% endblock %}

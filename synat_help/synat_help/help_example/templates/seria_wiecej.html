@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}
-    Wyszukiwanie po tytule &mdash; Synat, system pomocy
+    Wyszukiwanie proste &mdash; Synat, system pomocy
 {% endblock title %}
 
 {% block main_container %}
@@ -9,53 +9,30 @@
         <article id="moreinfo">
             <a href="javascript:history.back();" id="back">Wróć do formularza</a>
 
-          <h1>Wyszukiwanie po tytule</h1>
+          <h1>Wyszukiwanie po tytule serii</h1>
 
           <div>
               <h2>Opis</h2>
               <p>
-                Wyszukiwanie po tytule umożliwia zawężenie wyszukiwania do słów 
-                znajdujących się w tytule oraz podtytule dzieła. Wprowadzona
-                fraza może obejmować cały tytuł, bądź też pojedyncze słowa z tytułu.
-                Wyniki są sortowane względem ich dopasowania do wprowadzonych słów.
-              </p>
-              <h2>Uwaga</h2>
-              <p>
-                Wyszukiwane słowa są automatycznie łączone spójnikiem koniunkcji.
-                Jeśli jakieś słowo nie pojawia się w tytule wyszukiwanego zasobu, 
-                nie pojawi się on w wynikach wyszukiwania.
+                Wyszukiwanie po tytule serii wydawniczej umożliwia odnajdywanie
+                zasobów wydanych w ramach jednej serii wydawniczej.
               </p>
               <h2>Przykłady wyszukiwania</h2>
               <table>
                   <tr>
-                      <th></th>
-                      <th>Wynik</th>
+                      <th>Nazwa zasobu</th>
+                      <th>Zapytanie</th>
                   </tr>
                   <tr>
-                      <td>historia polsk*</td>
+                      <td>Kochanowski, Jan. Treny. Biblioteka Narodowa</td>
                       <td>
-                        <ul>
-                          <li>Historia Polski</li>
-                          <li>Historia polskiej państwowości</li>
-                          <li>Polska - historia najnowsza</li>
-                        </ul>
-                  </tr>
-                  <tr>
-                      <td>"historia polsk*"</td>
-                      <td>
-                        <ul>
-                          <li>Historia Polski</li>
-                          <li>Historia polskiej państwowości</li>
-                        </ul>
+                        treny biblioteka narodowa
                       </td>
                   </tr>
                   <tr>
-                      <td>b?g</td>
+                      <td>List do Kolosan. Biblia</td>
                       <td>
-                        <ul>
-                          <li>Bóg - obraz w literaturze</li>
-                          <li>Bug - rzeka nieznana</li>
-                        </ul>
+                        biblia list do kolosan
                       </td>
                   </tr>
               </table>

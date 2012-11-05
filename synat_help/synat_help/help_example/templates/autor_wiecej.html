@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}
-    Wyszukiwanie po tytule &mdash; Synat, system pomocy
+    Wyszukiwanie po autorze &mdash; Synat, system pomocy
 {% endblock title %}
 
 {% block main_container %}
@@ -9,53 +9,55 @@
         <article id="moreinfo">
             <a href="javascript:history.back();" id="back">Wróć do formularza</a>
 
-          <h1>Wyszukiwanie po tytule</h1>
+          <h1>Wyszukiwanie po autorze</h1>
 
           <div>
               <h2>Opis</h2>
               <p>
-                Wyszukiwanie po tytule umożliwia zawężenie wyszukiwania do słów 
-                znajdujących się w tytule oraz podtytule dzieła. Wprowadzona
-                fraza może obejmować cały tytuł, bądź też pojedyncze słowa z tytułu.
-                Wyniki są sortowane względem ich dopasowania do wprowadzonych słów.
+                Wyszukiwanie po autorze umożliwia zawężenie wyszukiwania do słów 
+                obejmujących autora zasobu, instytucji odpowiedzialnej za jej
+                powstanie lub wydarzenia, w trakcie którego on powstał.
               </p>
+              <p>
+                Autorzy <strong>indywidualni</strong> obejmują twórców, redaktorów,
+                osoby występujące, fotografów, artystów, itp.
+              </p>
+              <p>
+                Autorzy <strong>grupowi</strong> obejmują podmioty gospodarcze,
+                podmioty publiczne, konferencje, wydarzenia, itp.
               <h2>Uwaga</h2>
               <p>
-                Wyszukiwane słowa są automatycznie łączone spójnikiem koniunkcji.
-                Jeśli jakieś słowo nie pojawia się w tytule wyszukiwanego zasobu, 
-                nie pojawi się on w wynikach wyszukiwania.
+                Jeśli szukasz materiałów <strong>na temat</strong> jakiejś osoby lub
+                instytucji użyj <a href="{% url temat_wiecej %}">wyszukiwania po temacie</a>.
               </p>
               <h2>Przykłady wyszukiwania</h2>
               <table>
                   <tr>
-                      <th></th>
-                      <th>Wynik</th>
+                      <th>Rodzaj nazwy</th>
+                      <th>Przykład</th>
                   </tr>
                   <tr>
-                      <td>historia polsk*</td>
+                      <td>nazwisko</td>
                       <td>
-                        <ul>
-                          <li>Historia Polski</li>
-                          <li>Historia polskiej państwowości</li>
-                          <li>Polska - historia najnowsza</li>
-                        </ul>
-                  </tr>
-                  <tr>
-                      <td>"historia polsk*"</td>
-                      <td>
-                        <ul>
-                          <li>Historia Polski</li>
-                          <li>Historia polskiej państwowości</li>
-                        </ul>
+                        <p>Adam Mickiewicz<br/>
+                        <em>wynik będzie obejmował dzieła Adama Mickiewicza</em></p>
                       </td>
                   </tr>
                   <tr>
-                      <td>b?g</td>
+                      <td>podmiot publiczny</td>
                       <td>
-                        <ul>
-                          <li>Bóg - obraz w literaturze</li>
-                          <li>Bug - rzeka nieznana</li>
-                        </ul>
+                        <p>Sejm Rzeczpospolitej Polskiej</br>
+                          <em>wynik będzie obejmował zasoby (np. ustawy), 
+                            które powstały w Sejmie RP</em></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>fundacja</td>
+                      <td>
+                        <p>Centrum Cyfrowe</br>
+                          <em>wynik będzie obejmował zasoby (np. strony internetowe), 
+                            które zostały stworzone przez Centrum Cyfrowe</em>
+                        </p>
                       </td>
                   </tr>
               </table>

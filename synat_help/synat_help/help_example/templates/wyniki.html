@@ -1,31 +1,6 @@
-<!doctype html>
-<html lang="pl">
-<head>
-  <meta charset="utf-8">
-  <title>Wyszukiwanie proste &mdash; Synat, system pomocy</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/synat-help_style.css">
-  <script>document.documentElement.className = "js";</script>
-
-</head>
-<body>
-
-  <nav role="navigation">
-    <h1><a href="index.html">Synat &mdash; katalog zbiorów &mdash; strona główna</a></h1>    
-    <form action="/search/" role="search" method="get" id="szybkieszukanie">
-      <label for="szukaj">Szybkie wyszukiwanie:</label>
-      <input type="text" name="q" id="szukaj" value="" placeholder="Wpisz szukaną frazę" title="Wpisz szukaną frazę">
-      <select title="Wybierz zakres">
-        <option>Szukaj wszędzie</option>
-        <option>Szukaj gdzieś tam</option>
-      </select>    
-      <input type="submit" id="search-button" value="Szukaj">
-    </form>    
-  </nav>
-  
-  <div role="main" id="container" class="cont-main clearfix">  
-    
+{% extends "base.html" %}
+{% block title %}Wyniki wyszukiwania &mdash; Synat, system pomocy{% endblock %}
+{% block main_container %}
     <article>
       <h1> Twoje wyszukiwanie</h1>    
       <p> 
@@ -53,32 +28,4 @@
           <td>4</td><td>1</td><td>Uniwersytet Adama Mickiewicza</td><td>Instytucja</td><td><a href="#">więcej &raquo; <span class="hide"> o "Adam Mickiewicz"</span></a></td>
         </tr>
      </article>
-  
-
-
-
-  </div>
-  <footer>
-
-  </footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script src="{{ STATIC_URL }}js/jquery.cookie.js"></script>
-        <script src="{{ STATIC_URL }}js/jquery.collapse.js"></script>
-        <script>
-            $(".collapseit, .collapseit2").collapse({show: function(){
-                    this.animate({
-                        opacity: 'toggle', 
-                        height: 'toggle'
-                    }, 300);
-                },
-                hide : function() {
-                    
-                    this.animate({
-                        opacity: 'toggle', 
-                        height: 'toggle'
-                    }, 300);
-                }
-            });
-        </script>  
-</body>
-</html>
+{% endblock %}
