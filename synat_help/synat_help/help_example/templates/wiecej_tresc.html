@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load markup %}
+{% block title %}
+  {{ article.title }}  &mdash; Synat, system pomocy
+{% endblock title %}
+
+{% block main_container %}
+
+    <div id="main">
+        <article id="moreinfo">
+            <a href="javascript:history.back();" id="back">Wróć do formularza</a>
+
+            <h1>{{ article.title }}</h1>
+
+          <div>
+            {% autoescape off %}
+            {{ article.long_description|markdown }}
+            {% endautoescape %}
+          </div>
+
+      </article>
+    </div>
+
+
+    {% include "aside.html" %}
+
+{% endblock %}
+
+

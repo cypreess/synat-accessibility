@@ -124,7 +124,8 @@ INSTALLED_APPS = (
 
     'synat_help.help_example',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
+    'django.contrib.markup',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

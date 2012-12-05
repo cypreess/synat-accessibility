@@ -25,7 +25,6 @@
             </p>
         </div>
     </section>
-
     <section class="main-sec collapseit">
         <h3 class="collapse">Kryteria wyszukiwania</h3>
         <div>
@@ -85,4 +84,17 @@
                 class="wiecej-info">Przeglądanie numerów ISBN/ISSN - dalsze informacje</a></p>
         </div>
     </section>
+    {% for category in categories %}
+      <section class="main-sec collapseit">
+        <h3 class="collapse">{{ category }}</h3>
+        <div>
+          {% for article in category.article_set.all %}
+          <h4>{{ article }}</h4>
+          <p>{% autoescape off %}{{ article.short_description }}{% endautoescape %}</p>
+          <p><a href="{% url wiecej_tresc identifier=article.id %}">{{ article }} - dalsze informacje</a></p>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+
 </aside>
