@@ -6,7 +6,7 @@ import os
 DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -124,7 +124,8 @@ INSTALLED_APPS = (
 
     'synat_help.help_example',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
+    'django.contrib.markup',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

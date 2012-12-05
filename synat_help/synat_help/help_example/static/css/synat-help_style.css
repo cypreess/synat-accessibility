@@ -5,7 +5,7 @@
   Wersja :     1.1 / 28.06.2012
 ---------- ---------- ---------- ---------- ---------- ---------- ----------  */
 
-/* ----- NOTATNIK 
+/* ----- NOTATNIK
 Book 300                   font-family: 'Open Sans', sans-serif; font-weight: 300;
 Book 300 Italic            font-family: 'Open Sans', sans-serif; font-weight: 300; font-style: italic;
 Normal 400                 font-family: 'Open Sans', sans-serif; font-weight: 400;
@@ -37,9 +37,9 @@ body                      { height: 100%; margin: 0; padding:0; background-repea
                             background-image:    -moz-linear-gradient(top, #efefef, #ffffff); /* FF3.6+ */
                             background-image:      -o-linear-gradient(top, #efefef, #ffffff); /* Opera 11.10+ */
                             background-image:         linear-gradient(to bottom, #efefef, #ffffff); }
-                            
+
 nav                       { position: relative; margin: 20px auto; width: 900px; height: 60px; }
-#container                { position: relative; margin: 70px auto; width: 900px; background: #fff; border: 4px solid #718BB1; 
+#container                { position: relative; margin: 70px auto; width: 900px; background: #fff; border: 4px solid #718BB1;
                             -webkit-box-shadow: 0px 0px 8px 0px #ccc; box-shadow: 0px 0px 8px 0px #cccccc; }
 .cont-main                { margin:0 auto !important;}
 #main                     { width: 385px; float: left; margin: 30px 0 30px 30px;  }
@@ -56,7 +56,7 @@ a:hover, a:focus    { color: #1A52A4; text-decoration: none; }
 nav a:first-child         { display: block; width: 176px; height: 52px; background: url("../img/looogo.png"); text-indent: -9999px; overflow: hidden;}
 
 /* ----- Formularz szybkiego wyszukiwania ----- */
-form#szybkieszukanie      { position: absolute; right: 0; top: 0px; width:650px; height:38px; 
+form#szybkieszukanie      { position: absolute; right: 0; top: 0px; width:650px; height:38px;
                             text-align: right; padding-top: 14px; background: url("../img/bg-nav.png"); }
 form#szybkieszukanie label{ font: 800 1.1em/1.1em 'Open Sans',sans-serif; text-transform: uppercase; letter-spacing: 0.04em;}
 form#szybkieszukanie select {width: 135px; }
@@ -66,7 +66,7 @@ form#szybkieszukanie select {width: 135px; }
 #main legend.type-heading { font: 700 1.1em/1em 'Open Sans',sans-serif; padding:0 3em .5em 0; display: block; width: 100%; text-transform: uppercase;}
 #main label,
 #main fieldset
-fieldset legend           { font: 700 .85em/1em 'Open Sans',sans-serif; padding: 0; }               
+fieldset legend           { font: 700 .85em/1em 'Open Sans',sans-serif; padding: 0; }
 
 #main label.format        { display: inline-block; width: 160px;  padding: 0 5px 0 0; }
 #main input[type="text"],
@@ -84,58 +84,59 @@ fieldset legend           { font: 700 .85em/1em 'Open Sans',sans-serif; padding:
 #main fieldset fieldset   { clear:both; margin: .6em 0; }
 
 #main fieldset fieldset   { padding: 0; }
-#main fieldset fieldset 
+#main fieldset fieldset
                  legend   { }
 
 .buttons                  { text-align:right; margin: 15px 0 0 0; }
-.bt                       { position: relative; padding: 0 75px 0 20px; height: 57px; 
+.bt                       { position: relative; padding: 0 75px 0 20px; height: 57px;
                             background-image: url('../img/bg-right-button.png'), url('../img/bg-left-button.png');
                             background-position: right top, left top; background-repeat: no-repeat; border:0;
-                            font: 700 1.1em/1.1em 'Open Sans',sans-serif; color: #fff; text-shadow: 1px 1px 1px #1E334D; letter-spacing: .05em}                           
+                            font: 700 1.1em/1.1em 'Open Sans',sans-serif; color: #fff; text-shadow: 1px 1px 1px #1E334D; letter-spacing: .05em}
 .bt div                   { position: absolute; top: 18px; right: 13px; width: 27px; height: 25px; }
 .bt-arr                   { background: url(../img/button-arrow.png); }
-.bt-x                     { background: url(../img/button-x.png); }                        
-.bt:active, .bt:hover     {  -webkit-box-shadow: 1px 1px 3px 1px #CD6A21; box-shadow: 0px 0px 7px 1px #CD6A21; color: #fff;  }                                             
+.bt-x                     { background: url(../img/button-x.png); }
+.bt:active, .bt:hover     {  -webkit-box-shadow: 1px 1px 3px 1px #CD6A21; box-shadow: 0px 0px 7px 1px #CD6A21; color: #fff;  }
 .bt:focus                 { outline: 3px solid #CD6A21; color:#fff;}
 button::-moz-focus-inner  { border: 0; padding: 0; }
-/* @-moz-document url-prefix() { 
+/* @-moz-document url-prefix() {
   .bt div {
      top:-2px; right:33px;
   }
 } */
-    
+
 
 /* BUttons links */
-a.bt                      { margin: 1.5em 0 0 0; font: 700 .95em/1.1em 'Open Sans',sans-serif; 
-                            display:block; width: 200px; padding: 18px 65px 0 15px; height: 39px; 
+a.bt                      { margin: 1.5em 0 0 0; font: 700 .95em/1.1em 'Open Sans',sans-serif;
+                            display:block; width: 200px; padding: 18px 65px 0 15px; height: 39px;
                             text-decoration: none; position:relative; letter-spacing: 0;}
 a.bt div.arr              { position: absolute; top: 17px; right: 13px; width: 27px; height: 25px; background: url(../img/button-arrow.png); }
 
 /* ----- Nawigacja tab ----- */
 ul#tab-nav                { list-style: none; margin: 0; padding: 0; }
-ul#tab-nav li             { margin: 0; } 
-ul#tab-nav li a           { display: block; width: 447px; padding: 15px 0; text-align: center; 
+ul#tab-nav li             { margin: 0; }
+ul#tab-nav li a           { display: block; width: 447px; padding: 15px 0; text-align: center;
                             -webkit-box-shadow: 0px 0px 4px 0px #ccc; box-shadow: 0px -3px 6px -1px #cccccc;
                             text-decoration: none; font: 800 1.1em/1.1em 'Open Sans',sans-serif; text-transform: uppercase; letter-spacing: 0.04em;}
 ul#tab-nav li#lt a        { position: absolute; left: -4px; }
 ul#tab-nav li#rt a        { position: absolute; right: -4px; }
 ul#tab-nav li a.curr      { background: #718BB1; color: #fff; top: -50px; } /* klasa dla aktywnej zakladki */
-ul#tab-nav li a.inact     { background: #fff; color: #454547;  top: -52px; border: 1px solid #CACACA; 
+ul#tab-nav li a.inact     { background: #fff; color: #454547;  top: -52px; border: 1px solid #CACACA;
                             border-width: 1px 1px 0 1px; } /*klasa dla nieaktywnej zakladki */
 ul#tab-nav li h1          { font-size: inherit; padding:0; margin:0; }
 
 /* ----- Aside ----- */
 aside h2                  { font: 800 1.1em/1em 'Open Sans',sans-serif; text-transform: uppercase; margin:0 0 .2em 0; }
-aside h3                  { font: 800 .9em/1em 'Open Sans',sans-serif; margin:1em 0 .3em 0;color:#444} 
+aside h3                  { font: 800 1.1em/1em 'Open Sans',sans-serif; text-transform: uppercase; margin:0 0 .2em 0; }
+aside h4                  { font: 800 .9em/1em 'Open Sans',sans-serif; margin:1em 0 .3em 0;color:#444}
 aside p, ul, ol           { font: 400 .8em/1.3em 'Open Sans',sans-serif; margin:0 0 1em 0;}
 aside ul li               { margin: 0 0 .5em 0;}
-aside section.main-sec    { background: #F2F0EF; padding: .7em .7em; margin: 0 0 .5em 0; border: 1px solid #CACACA; 
+aside section.main-sec    { background: #F2F0EF; padding: .7em .7em; margin: 0 0 .5em 0; border: 1px solid #CACACA;
                             -webkit-box-shadow: 1px 1px 5px 0px #ccc; box-shadow: 1px 1px 5px 0px #cccccc; }
 aside section>p:last-of-type { border-bottom: 1px solid #D3D0CE; padding: 0 0 1em 0 ; margin:0;}
 
 
 /* collapse */
-.collapse           {cursor:pointer; background: url("../img/collapse-state.png") no-repeat 100% 5px;  text-decoration:none; }  
+.collapse           {cursor:pointer; background: url("../img/collapse-state.png") no-repeat 100% 5px;  text-decoration:none; }
 .collapse a         {color: #999; text-decoration:none;}
 .collapse a:hover   {color: #666; text-decoration:none;}
 .collapse-active    {background-position: 100% -16px;}
@@ -144,7 +145,7 @@ aside section>p:last-of-type { border-bottom: 1px solid #D3D0CE; padding: 0 0 1e
 /* ----- Bloki zwykle tekstowe ----- */
 #container>section:first-of-type  { width: 395px; height: 290px; float: left; margin: 20px 0 30px 30px; position:relative; }
 #container>section:last-of-type   { width: 395px; height: 290px; float: right; margin: 20px 30px 30px 0;  position:relative;}
-#container>section h2             { font: 800 1.3em/1.3em 'Open Sans',sans-serif; padding: 0 0 .6em 0; 
+#container>section h2             { font: 800 1.3em/1.3em 'Open Sans',sans-serif; padding: 0 0 .6em 0;
                                     border-bottom: 1px solid #999; text-transform: uppercase; }
 #container>section p, ul          { font: 400 .8em/1.3em 'Open Sans',sans-serif; margin: 0 0 1em 0; }
 #container>section .bt            { position: absolute; bottom:0; }
@@ -153,9 +154,9 @@ aside section>p:last-of-type { border-bottom: 1px solid #D3D0CE; padding: 0 0 1e
 article h1                    { font: 800 1.6em/1.6em 'Open Sans',sans-serif; margin: 0 0 .6em 0; text-transform: uppercase; }
 article h2                    { font: 800 1.3em/1.3em 'Open Sans',sans-serif; margin: 0 0 .6em 0; text-transform: uppercase; }
 article h3                    { font: 800 1.1em/1.1em 'Open Sans',sans-serif; margin: 0 0 .6em 0; text-transform: uppercase; }
-article p, 
-article ul, 
-article ol, 
+article p,
+article ul,
+article ol,
 article table                 { font: 400 .9em/1.3em 'Open Sans',sans-serif; margin:0 0 1em 0;}
 
 article table                 { width: 100%; }
@@ -172,7 +173,7 @@ article td.inf                { font-style: italic; }
 article#moreinfo h1         { font: 800 1em/1.4em 'Open Sans',sans-serif; margin: 0 0 .6em 0; width: 90%;}
 article#moreinfo h2         { font: 800 .9em/1.4em 'Open Sans',sans-serif; margin: 0 0 .1em 0; }
 article#moreinfo h3         { font: 700 .85em/1.4em 'Open Sans',sans-serif; margin: 0 0 .1em 0; }
-article#moreinfo #back       { display: block; width: 37px; height: 37px; background: url(../img/wyjdz.png); text-indent: -9999px; 
+article#moreinfo #back       { display: block; width: 37px; height: 37px; background: url(../img/wyjdz.png); text-indent: -9999px;
                               overflow: hidden; position: absolute; top: 0; right: 0; }
 
 /* --------------------------------------------------
@@ -188,7 +189,7 @@ input:focus, a:focus, select:focus { outline: 3px solid #CD6A21; -webkit-transit
 /* ----- Wstępna wersja reponsive ----- */
 @media only screen and (max-width: 530px) {
 body {background:#ccc;-webkit-transition: all 1s ease-out; }
-nav, #container, #main, aside, #container>section:first-of-type, #container>section:last-of-type, 
+nav, #container, #main, aside, #container>section:first-of-type, #container>section:last-of-type,
 form#szybkieszukanie  {width:98%; margin:0; position:static; height:auto;}
 form#szybkieszukanie {background:0;}
 * {float:none;position:static}
@@ -204,5 +205,5 @@ ul#tab-nav li a, ul#tab-nav li#lt a, ul#tab-nav li#rt a {position:static;width:9
 .clearfix { *zoom: 1; }
 
 /* ----- Dostępne ukrywanie każdego elementu -----*/
-.hide                     { position:absolute !important; clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px); 
+.hide                     { position:absolute !important; clip:rect(1px 1px 1px 1px); clip:rect(1px,1px,1px,1px);
                             padding:0 !important; border:0 !important; height:1px !important; width:1px !important; overflow:hidden}
