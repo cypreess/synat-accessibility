@@ -17,6 +17,8 @@ urlpatterns = patterns('',
         url(r'^temat/wiecej/$', TemplateView.as_view(template_name='temat_wiecej.html'), name='temat_wiecej'),
         url(r'^nazwa/wiecej/$', TemplateView.as_view(template_name='nazwa_wiecej.html'), name='nazwa_wiecej'),
         url(r'^seria/wiecej/$', TemplateView.as_view(template_name='seria_wiecej.html'), name='seria_wiecej'),
+        url(r'^przegladanie_tytulow/wiecej/$', TemplateView.as_view(template_name='przegladanie_tytulow_wiecej.html'), name='przegladanie_tytulow_wiecej'),
+        url(r'^przegladanie_isbn/wiecej/$', TemplateView.as_view(template_name='przegladanie_isbn_wiecej.html'), name='przegladanie_isbn_wiecej'),
         url(r'^wyniki/$', TemplateView.as_view(template_name='wyniki.html'), name='wyniki'),
 )
 
