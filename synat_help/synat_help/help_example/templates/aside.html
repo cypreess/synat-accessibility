@@ -1,7 +1,8 @@
 <!-- Nawigacja w obrębie pomocy -->
-<aside>
+<aside name="Pomoc">
+  <h2>Pomoc</h2>
     <section class="main-sec collapseit">
-        <h2 class="collapse">O wyszukiwaniu</h2>
+        <h3 class="collapse">O wyszukiwaniu</h3>
         <div>
             <p>
                 Aby efektywnie korzystać z mechanizmu wyszukiwania w Synacie,
@@ -26,59 +27,62 @@
     </section>
 
     <section class="main-sec collapseit">
-        <h2 class="collapse">Kryteria wyszukiwania</h2>
+        <h3 class="collapse">Kryteria wyszukiwania</h3>
         <div>
-            <h3>Słowa kluczowe</h3>
+            <h4>Słowa kluczowe</h4>
             <p>
                 Wyszukiwanie z użyciem <strong>słów kluczowych</strong> dopasowuje
                 wprowadzone słowa do wszystkich informacji dostępnych na temat zasobu
                 (tutułu, podtytułu, autora, tematu, itp.). Kolejność wprowadzonych słów
                 nie ma znaczenia.
             </p>
-            <p><a href="{% url slowa_kluczowe_wiecej %}" class="wiecej-info">Więcej informacji na temat słów kluczowych</a></p>
-            <h3>Tytuł</h3>
+            <p><a href="{% url slowa_kluczowe_wiecej %}" class="wiecej-info">Słowa kluczowe - dalsze informacje</a></p>
+            <h4>Tytuł</h4>
             <p>
                 Wyszukiwanie po <strong>tytule</strong> dopasowuje poszukiwane
                 słowa w tytule lub podtytule zasobu.
             </p>
-            <p><a href="{% url tytul_wiecej %}" class="wiecej-info">Więcej informacji na temat tytułu</a></p>
-            <h3>Autor / Twórca</h3>
+            <p><a href="{% url tytul_wiecej %}" class="wiecej-info">Tutuł - dalsze informacje</a></p>
+            <h4>Autor / Twórca</h4>
             <p>
                 Wyszukiwanie po <strong>autorze/twórcy</strong> dopasowuje poszukiwane
                 słowa w nazwisku autora, instytucji odpowiedzialnej za stworzenie zasobu
                 lub wydarzeniu, w trakcie którego on powstał.
             </p>
-            <p><a href="{% url autor_wiecej %}" class="wiecej-info">Więcej informacji na temat autora</a></p>
-            <h3>Temat</h3>
+            <p><a href="{% url autor_wiecej %}" class="wiecej-info">Autor - dalsze informacje</a></p>
+            <h4>Temat</h4>
             <p>
                 Wyszukiwanie po <strong>temacie</strong> dopasowuje poszukiwane
                 słowa do kontrolowanej listy tematów wykorzystywanych do opisu
                 zasobów.
             </p>
-            <p><a href="{% url temat_wiecej %}" class="wiecej-info">Więcej informacji dotyczących tematu zasobu</a></p>
-            <h3>Tytuł / Autor</h3>
+            <p><a href="{% url temat_wiecej %}" class="wiecej-info">Temat zasobu - dalsze informacje</a></p>
+            <h4>Tytuł / Autor</h4>
             <p>
                 Wyszukiwanie po <strong>tytule i autorze</strong> dopasowuje poszukiwane
                 słowa jednocześnie do tytułu i autora lub twórcy zasobu.
             </p>
-            <p><a href="{% url nazwa_wiecej %}" class="wiecej-info">Więcej informacji na temat tytułu i autora</a></p>
-            <h3>Tytuł / Seria</h3>
+            <p><a href="{% url nazwa_wiecej %}" class="wiecej-info">Tytuł i autor - dalsze informacje</a></p>
+            <h4>Tytuł / Seria</h4>
             <p>
                 Wyszukiwanie po <strong>tytule i serii wydawniczej</strong> dopasowuje poszukiwane
                 słowa jednocześnie do tytułu, podtytułu i nazwy serii wydawniczej zasobu.
             </p>
-            <p><a href="{% url seria_wiecej %}" class="wiecej-info">Więcej informacji tytułu i serii wydawniczej</a></p>
+            <p><a href="{% url seria_wiecej %}" class="wiecej-info">Tytuł i seria wydawnicza - dalsze informacje</a></p>
         </div>
     </section>
     <section class="main-sec collapseit">
-        <h2 class="collapse">Przeglądanie zasobów</h2>
+        <h3 class="collapse">Przeglądanie zasobów</h3>
         <div>
-            <h3>Przeglądanie tytułów</h3>
-            <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
-            <p><a href="wiecej.html">Dowiedz się więcej</a></p>
-            <h3>Przeglądanie numerów ISBN/ISSN</h3>
-            <p>Informacja o wyszukiwaniu, którą trzeba napisać, sformatować i opublikować, będzie niezbędna w tym bloku.</p>
-            <p><a href="wiecej.html">Dowiedz się więcej</a></p>
+            <h4>Przeglądanie tytułów</h4>
+            <p>Przeglądanie tytułów pozwala na przeglądnięcie indeksu zasobów uporządkowanego
+              alfabetycznie względem ich tytułów. </p>
+            <p><a href="{% url przegladanie_tytulow_wiecej %}" class="wiecej-info">Przeglądanie tytułów - dalsze informacje</a></p>
+            <h4>Przeglądanie numerów ISBN/ISSN</h4>
+            <p>Przeglądanie numerów ISBN/ISSN pozwala na przeglądnięcie indeksu zasobów posortowanego względem
+              numerów ISBN/ISSN.</p>
+            <p><a href="{% url przegladanie_isbn_wiecej %}" 
+                class="wiecej-info">Przeglądanie numerów ISBN/ISSN - dalsze informacje</a></p>
         </div>
     </section>
 </aside>
